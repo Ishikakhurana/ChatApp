@@ -55,7 +55,7 @@ socket.broadcast.emit("leave",leftUserObj);
 
 // });
 
-
-server.listen(5500||process.env.PORT,function(){
+let port=process.env.PORT||5500;
+server.listen(port,function(){
 // console.log("server running");
 });
